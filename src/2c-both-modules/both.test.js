@@ -8,7 +8,6 @@ const { combine } = await import('../combine.js');
 jest.unstable_mockModule('../greeting.js', () => ({
 	greet: jest.fn((name = 'World') => combine('Hiya', name)),
 }));
-
 const { greet } = await import('../greeting.js');
 
 describe('greet', () => {
