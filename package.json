@@ -1,0 +1,16 @@
+{
+  "name": "es6-modules",
+  "version": "1.0.0",
+  "description": "s",
+  "main": "es6-modules.html",
+  "scripts": {
+    "coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
+    "watch": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}
