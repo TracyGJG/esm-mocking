@@ -1,7 +1,9 @@
 import { jest } from '@jest/globals';
 
+const combine = jest.fn((greeting, who) => `${greeting} "${who}"`);
+
 jest.unstable_mockModule('../combine.js', () => ({
-	combine: jest.fn((greeting, who) => `${greeting} "${who}"`),
+	combine,
 }));
 
 const { greet } = await import('../greeting.js');
